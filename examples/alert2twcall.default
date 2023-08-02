@@ -1,0 +1,11 @@
+PORT=4000
+# address to bind server to, use 0.0.0.0 to listen globally
+HOST=127.0.0.1
+TWILIO_ACCOUNT_SID=XXXX
+TWILIO_AUTH_TOKEN=YYY
+TWILIO_SENDER='+1234'
+# use this in case you want to have a fallback receiver, if unused receiver must
+# be set via the url
+#TWILIO_RECEIVER='+4321'
+# use this in case you want to have more than one fallback receiver
+#TWILIO_RECEIVER='+4321,+8765,...'
