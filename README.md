@@ -1,4 +1,5 @@
-[//]: # (fragments of this README are Copyright (c) 2016 Gaël Gillard, based on MIT License)
+
+[fragments of this README are Copyright (c) 2016 Gaël Gillard, based on MIT License]::
 
 # Prometheus alert with phone call
 
