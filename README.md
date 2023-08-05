@@ -33,13 +33,13 @@ variable. If none is specified, status code 400 BadRequest is returned.
 
 ## Test it
 
-To send test sms to a phone +zxxxyyyyyyy use the following command (please
+To send test sms to a phone +XXXYYYYYYY use the following command (please
 notice `%2B` symbols, representing a url encoded `+` sign)
 
 ```bash
 $ curl -H "Content-Type: application/json" -X POST -d \
 '{"version":"4","status":"firing","alerts":[{"annotations":{"summary":"Server down"},"startsAt":"2016-03-19T05:54:01Z"}]}' \
-http://localhost:4000/call?receiver=%2Bzxxxyyyyyyy
+http://localhost:4000/call?receiver=%2bXXXYYYYYYY
 ```
 
 ## Install
