@@ -50,8 +50,9 @@ Then:
 
 ```sh
 $ make build # downloads npm deps
-$ make install # cp to /usr/local/alert2twcall
-$ make install_systemd # to set for systemd startup
+$ sudo make install # cp to /usr/local/alert2twcall
+$ sudo make install_systemd # to set for systemd startup
+# service alert2twcall start
 ```
 
 ## Acknowledgments

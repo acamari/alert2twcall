@@ -16,5 +16,7 @@ install:
 install_systemd:
 	install -o ${OWNER} -g ${GROUP} examples/alert2twcall.service /lib/systemd/system
 	install -o ${OWNER} -g ${GROUP} examples/alert2twcall.default /etc/default/alert2twcall
+	systemctl daemon-reload
+	systemctl enable alert2twcall.service
 
 .PHONY: build install install_systemd

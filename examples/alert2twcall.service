@@ -1,13 +1,15 @@
 # install this to /lib/systemd/system
 [Unit]
 Description=alert2twcall - send alertmanagers alerts to phone calls via twilio
-Documentation=https://pending.example.com
+Documentation=https://github.com/acamari/alert2twcall
 After=network.target
 
 [Service]
 EnvironmentFile=/etc/default/alert2twcall
 Type=simple
-User=ubuntu
+# in case you installed nodejs via snaps it wont like users with home outside
+# /home, root seems to work, sigh...
+User=root
 ExecStart=/usr/local/alert2twcall/bin/www
 Restart=on-failure
 
