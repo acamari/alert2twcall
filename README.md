@@ -56,12 +56,19 @@ http://localhost:4000/call?receiver=%2bXXXYYYYYYY
 
 ## Install
 
+Dependencies:
+
+* nodejs
+* npm
+
+Clone this repo.
+
 Edit `examples/alert2twcall.default` to suit your environment.
 
 Then:
 
 ```sh
-$ make build # downloads npm deps
+$ make build # requires npm
 $ sudo make install # cp to /usr/local/alert2twcall
 $ sudo make install_systemd # to set for systemd startup
 # service alert2twcall start
