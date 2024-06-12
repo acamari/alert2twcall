@@ -31,10 +31,22 @@ You can see a basic launch inside the Makefile.
 specified, or to default receiver, represented by TWILIO_RECEIVER environment
 variable. If none is specified, status code 400 BadRequest is returned.
 
+## Sound
+
+By default the summary annotation for all the alerts is joined, then a TwiML
+code is generated that says it loud in an indefinite loop. On the next
+example you will hear in the phone: "Server down. Server down. ...".
+You can customize the sound by setting a summary annotation in your prometheus
+alert.
+
+There is not a provision to handle more complex messages (not desired or
+planned).
+
 ## Test it
 
-To send test sms to a phone +XXXYYYYYYY use the following command (please
-notice `%2B` symbols, representing a url encoded `+` sign)
+To send a call to phone +XXXYYYYYYY use the following command (please
+notice `%2B` symbols, representing a url encoded `+` sign).
+
 
 ```bash
 $ curl -H "Content-Type: application/json" -X POST -d \
